@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: new-draco
+spec:
+  replicas: 2
+  template:
+   metadata:
+     labels:
+       name: new-draco
+   spec:
+     containers:
+     - name: draconifi
+       image: csp2-centos-1:5000/nifi_test_bare_2
+       ports:
+       - containerPort: 7070
+       - containerPort: 7575
+       - containerPort: 7979
