@@ -4,7 +4,7 @@ stages:
   - applyYamlConfig:
       path: ./deployment.yaml
     env:
-      NIFI_WEB_HTTP_PORT: "7474"
+      NIFI_WEB_HTTP_PORT: "7070"
   - applyYamlConfig:
       path: ./service.yaml
   - applyYamlConfig:
