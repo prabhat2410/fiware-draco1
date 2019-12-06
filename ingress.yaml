@@ -1,15 +1,15 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: draco-ingress
+  name: draco2-ingress
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: old.draco.com
+  - host: new.draco.com
     http:
       paths:
       - path: /
         backend:
-          serviceName: new-draco-service
+          serviceName: draco2-service
           servicePort: 7474
