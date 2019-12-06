@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: draco2-service
   labels:
-    name: draco2-service
+    name: draco2
 spec:
   type: NodePort
   ports:
-    - port: 7474
+    - port: 7070
       nodePort: 30016
       name: http
   selector:
