@@ -7,7 +7,5 @@ stages:
       NIFI_WEB_HTTP_PORT: "7070"
   - applyYamlConfig:
       path: ./service.yaml
-  - applyYamlConfig:
-      path: ./ingress.yaml
 timeout: 60
 notification: {}
