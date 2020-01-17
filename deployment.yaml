@@ -16,3 +16,6 @@ spec:
        - containerPort: 7070
        - containerPort: 7575
        - containerPort: 7979
+       env:
+       - name: NIFI_WEB_HTTP_PORT
+         value: "7070"
