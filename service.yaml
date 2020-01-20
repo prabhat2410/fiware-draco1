@@ -10,5 +10,8 @@ spec:
     - port: 7070
       nodePort: 31333
       name: http
+    - port: 7575
+      nodePort: 31444
+      name: data
   selector:
     name: draco2
